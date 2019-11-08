@@ -1,4 +1,4 @@
-package com.java.factorypattern.factorypattern;
+package com.java.factorypattern;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

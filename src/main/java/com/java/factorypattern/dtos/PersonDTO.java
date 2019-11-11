@@ -1,8 +1,8 @@
-package com.java.factorypattern.daos;
+package com.java.factorypattern.dtos;
 
 import java.util.Date;
 
-public class Person {
+public class PersonDTO {
 	private Long id;
 	private Long identification;
 	private String firstName;
@@ -12,7 +12,7 @@ public class Person {
 	private Date createDate;
 	private Date updateDate;
 	
-	public Person(String firstName, String lastName, String alias, boolean hero,
+	public PersonDTO(String firstName, String lastName, String alias, boolean hero,
 			Date createDate, Date updateDate) {
 		super();
 		this.firstName = firstName;
@@ -74,5 +74,28 @@ public class Person {
 
 	public void setUpdateDate(Date updateDate) {
 		this.updateDate = updateDate;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Person [id=");
+		builder.append(id);
+		builder.append(", identification=");
+		builder.append(identification);
+		builder.append(", firstName=");
+		builder.append(firstName);
+		builder.append(", lastName=");
+		builder.append(lastName);
+		builder.append(", alias=");
+		builder.append(alias);
+		builder.append(", hero=");
+		builder.append(hero);
+		builder.append(", createDate=");
+		builder.append(createDate);
+		builder.append(", updateDate=");
+		builder.append(updateDate);
+		builder.append("]");
+		return builder.toString();
 	}
 }

@@ -6,14 +6,15 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "powers")
 public class Power {
 	
-	@Column
-	@GeneratedValue(strategy= GenerationType.AUTO)
+	@Id
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	private Long id;
 	
 	@Column
@@ -25,7 +26,7 @@ public class Power {
 	@Column
 	private int level;
 	
-	@Column
+	@Column(name="power_range")
 	private int range;
 	
 	@Column(name = "create_date")
@@ -33,6 +34,10 @@ public class Power {
 	
 	@Column(name = "update_date")
 	private Date updateDate;
+	
+	public Power() {
+		
+	}
 	
 	public Power(Long id, String name, String type, int level, int range, Date createDate, Date updateDate) {
 		super();
@@ -90,6 +95,27 @@ public class Power {
 
 	public void setUpdateDate(Date updateDate) {
 		this.updateDate = updateDate;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Power [id=");
+		builder.append(id);
+		builder.append(", name=");
+		builder.append(name);
+		builder.append(", type=");
+		builder.append(type);
+		builder.append(", level=");
+		builder.append(level);
+		builder.append(", range=");
+		builder.append(range);
+		builder.append(", createDate=");
+		builder.append(createDate);
+		builder.append(", updateDate=");
+		builder.append(updateDate);
+		builder.append("]");
+		return builder.toString();
 	}
 
 }

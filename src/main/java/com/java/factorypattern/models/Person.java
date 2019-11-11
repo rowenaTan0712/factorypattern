@@ -1,15 +1,12 @@
 package com.java.factorypattern.models;
 
 import java.util.Date;
-import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.EqualsAndHashCode;
@@ -19,8 +16,8 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode
 public class Person {
 	
-	@Column
-	@GeneratedValue(strategy= GenerationType.AUTO)
+	@Id
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	private Long id;
 	
 	@Column(name = "first_name")
@@ -44,18 +41,12 @@ public class Person {
 	@Column
 	private Long identification;
 	
-	@OneToMany(cascade= CascadeType.ALL, orphanRemoval = true)
-	@JoinColumn(name="power_id")
-	private List<Power> powers;
-	
-	public Person(String firstName, String lastName, String alias, boolean hero,
-			List<Power> powers, Date createDate, Date updateDate) {
+	public Person(String firstName, String lastName, String alias, boolean hero, Date createDate, Date updateDate) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.alias = alias;
 		this.hero = hero;
-		this.powers = powers;
 		this.createDate = createDate;
 		this.updateDate = updateDate;
 	}
@@ -88,12 +79,6 @@ public class Person {
 	}
 	public void setHero(boolean hero) {
 		this.hero = hero;
-	}
-	public List<Power> getPowers() {
-		return powers;
-	}
-	public void setPowers(List<Power> powers) {
-		this.powers = powers;
 	}
 	public Long getIdentification() {
 		return identification;
@@ -154,5 +139,28 @@ public class Person {
 	}
 	public void setUpdateDate(Date updateDate) {
 		this.updateDate = updateDate;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Person [id=");
+		builder.append(id);
+		builder.append(", firstName=");
+		builder.append(firstName);
+		builder.append(", lastName=");
+		builder.append(lastName);
+		builder.append(", alias=");
+		builder.append(alias);
+		builder.append(", hero=");
+		builder.append(hero);
+		builder.append(", createDate=");
+		builder.append(createDate);
+		builder.append(", updateDate=");
+		builder.append(updateDate);
+		builder.append(", identification=");
+		builder.append(identification);
+		builder.append("]");
+		return builder.toString();
 	}
 }

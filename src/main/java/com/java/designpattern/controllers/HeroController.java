@@ -1,4 +1,4 @@
-package com.java.factorypattern.controllers;
+package com.java.designpattern.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

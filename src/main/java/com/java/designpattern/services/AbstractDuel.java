@@ -1,6 +1,6 @@
-package com.java.factorypattern.services;
+package com.java.designpattern.services;
 
-import com.java.factorypattern.dtos.PersonDTO;
+import com.java.designpattern.dtos.PersonDTO;
 
 public abstract class AbstractDuel<T> {
 	

@@ -1,11 +1,15 @@
-package com.java.factorypattern.dtos;
+package com.java.designpattern.dtos;
 
 import java.util.Date;
 import java.util.List;
 
-public class HeroDTO extends PersonDTO{
+public class VillainDTO extends PersonDTO{
 	
-	public HeroDTO(Long id, Long identification, String firstName, String lastName, String alias, boolean hero,
+	public VillainDTO () {
+		
+	}
+	
+	public VillainDTO(Long id, Long identification, String firstName, String lastName, String alias, boolean hero,
 			Date createDate, Date updateDate) {
 		super(firstName, lastName, alias, hero, createDate, updateDate);
 	}

@@ -8,10 +8,10 @@
 		<version>2.2.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.java.factorypattern</groupId>
-	<artifactId>factorypattern</artifactId>
+	<groupId>com.java.designpattern</groupId>
+	<artifactId>designpattern</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>factorypattern</name>
+	<name>designpattern</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

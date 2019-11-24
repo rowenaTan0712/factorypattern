@@ -1,4 +1,4 @@
-package com.java.factorypattern.models;
+package com.java.designpattern.models;
 
 import java.util.Date;
 
@@ -40,6 +40,10 @@ public class Person {
 	
 	@Column
 	private Long identification;
+	
+	public Person() {
+		
+	}
 	
 	public Person(String firstName, String lastName, String alias, boolean hero, Date createDate, Date updateDate) {
 		super();
@@ -83,8 +87,11 @@ public class Person {
 	public Long getIdentification() {
 		return identification;
 	}
-	public void setIdentification(Long identification) {
+	public void setIdentification() {
 		this.identification = (long) hashCode();
+	}
+	public void setIdentification(Long identification) {
+		this.identification = identification;
 	}
 	
 	@Override

@@ -1,4 +1,4 @@
-package com.java.factorypattern.services;
+package com.java.designpattern.services;
 
 import java.util.Date;
 import java.util.List;
@@ -8,10 +8,10 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.java.factorypattern.dtos.PowerDTO;
-import com.java.factorypattern.exceptions.CustomUncheckException;
-import com.java.factorypattern.models.Power;
-import com.java.factorypattern.repositories.PowerRepository;
+import com.java.designpattern.dtos.PowerDTO;
+import com.java.designpattern.exceptions.CustomUncheckException;
+import com.java.designpattern.models.Power;
+import com.java.designpattern.repositories.PowerRepository;
 
 @Service
 public class PowerManagementImpl implements PowerManagement{

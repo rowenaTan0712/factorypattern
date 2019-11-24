@@ -1,4 +1,4 @@
-package com.java.factorypattern.dtos;
+package com.java.designpattern.dtos;
 
 import java.util.Date;
 

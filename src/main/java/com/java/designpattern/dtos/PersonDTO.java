@@ -1,4 +1,4 @@
-package com.java.factorypattern.dtos;
+package com.java.designpattern.dtos;
 
 import java.util.Date;
 
@@ -11,6 +11,10 @@ public class PersonDTO {
 	private boolean hero;
 	private Date createDate;
 	private Date updateDate;
+	
+	public PersonDTO() {
+		
+	}
 	
 	public PersonDTO(String firstName, String lastName, String alias, boolean hero,
 			Date createDate, Date updateDate) {

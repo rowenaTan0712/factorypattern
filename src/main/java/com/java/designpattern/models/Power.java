@@ -1,4 +1,4 @@
-package com.java.factorypattern.models;
+package com.java.designpattern.models;
 
 import java.util.Date;
 

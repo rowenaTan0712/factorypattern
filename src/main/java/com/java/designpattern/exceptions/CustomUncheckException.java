@@ -1,4 +1,4 @@
-package com.java.factorypattern.exceptions;
+package com.java.designpattern.exceptions;
 
 public class CustomUncheckException extends RuntimeException{
 

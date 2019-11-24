@@ -1,9 +1,9 @@
-package com.java.factorypattern.services;
+package com.java.designpattern.services;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.java.factorypattern.dtos.PowerDTO;
+import com.java.designpattern.dtos.PowerDTO;
 
 public interface PowerManagement {
 	

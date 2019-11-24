@@ -1,13 +1,13 @@
-package com.java.factorypattern.factorypattern;
+package com.java.designpattern;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FactorypatternApplication {
+public class DesignpatternApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FactorypatternApplication.class, args);
+		SpringApplication.run(DesignpatternApplication.class, args);
 	}
 
 }

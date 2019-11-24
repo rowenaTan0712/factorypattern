@@ -1,10 +1,10 @@
-package com.java.factorypattern.factorypattern;
+package com.java.designpattern;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FactorypatternApplicationTests {
+class DesignpatternApplicationTests {
 
 	@Test
 	void contextLoads() {

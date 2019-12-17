@@ -1,6 +1,6 @@
-package com.java.designpattern.factorypattern;
+package com.java.designpattern.workflows;
 
-public class AccountManagementImpl {
+public class ObjectInitializer {
 	
 	public AccountManagement getType (boolean isHero) {
 		

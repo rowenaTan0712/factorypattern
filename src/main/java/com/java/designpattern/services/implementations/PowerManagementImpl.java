@@ -1,4 +1,4 @@
-package com.java.designpattern.services;
+package com.java.designpattern.services.implementations;
 
 import java.util.Date;
 import java.util.List;
@@ -12,6 +12,7 @@ import com.java.designpattern.dtos.PowerDTO;
 import com.java.designpattern.exceptions.CustomUncheckException;
 import com.java.designpattern.models.Power;
 import com.java.designpattern.repositories.PowerRepository;
+import com.java.designpattern.services.PowerManagement;
 
 @Service
 public class PowerManagementImpl implements PowerManagement{

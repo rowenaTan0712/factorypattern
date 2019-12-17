@@ -1,4 +1,4 @@
-package com.java.designpattern.services;
+package com.java.designpattern.services.implementations;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +12,7 @@ import com.java.designpattern.models.PersonPower;
 import com.java.designpattern.models.Power;
 import com.java.designpattern.repositories.PersonPowerRepository;
 import com.java.designpattern.repositories.PowerRepository;
+import com.java.designpattern.services.PersonPowerManagement;
 
 @Service
 public class PersonPowerManagementImpl implements PersonPowerManagement{

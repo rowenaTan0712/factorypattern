@@ -27,6 +27,14 @@ public class PersonDTO {
 		this.updateDate = updateDate;
 	}
 	
+	public PersonDTO(String firstName, String lastName, String alias, boolean hero) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.alias = alias;
+		this.hero = hero;
+	}
+	
 	public Long getId() {
 		return id;
 	}

@@ -1,6 +1,5 @@
 package com.java.designpattern.dtos;
 
-import java.util.Date;
 import java.util.List;
 
 public class VillainDTO extends PersonDTO{
@@ -9,9 +8,8 @@ public class VillainDTO extends PersonDTO{
 		
 	}
 	
-	public VillainDTO(Long id, Long identification, String firstName, String lastName, String alias, boolean hero,
-			Date createDate, Date updateDate) {
-		super(firstName, lastName, alias, hero, createDate, updateDate);
+	public VillainDTO(String firstName, String lastName, String alias, boolean hero) {
+		super(firstName, lastName, alias, hero);
 	}
 
 	private List<PowerDTO> powers;

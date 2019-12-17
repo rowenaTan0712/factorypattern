@@ -19,7 +19,7 @@ import com.java.designpattern.dtos.PowerDTO;
 import com.java.designpattern.services.PowerManagement;
 
 @RestController
-@RequestMapping("/clash")
+@RequestMapping("/factory/pattern/clash")
 public class ClashController {
 	
 	@Autowired

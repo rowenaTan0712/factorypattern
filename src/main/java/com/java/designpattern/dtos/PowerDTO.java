@@ -4,6 +4,10 @@ import java.util.Date;
 
 public class PowerDTO {
 	
+	public PowerDTO () {
+		
+	}
+	
 	public PowerDTO(Long id, String name, String type, int level, int range, Date createDate, Date updateDate) {
 		super();
 		this.id = id;

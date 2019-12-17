@@ -1,4 +1,4 @@
-package com.java.designpattern.services;
+package com.java.designpattern.services.implementations;
 
 import java.util.Date;
 import java.util.List;
@@ -12,6 +12,7 @@ import com.java.designpattern.dtos.PersonDTO;
 import com.java.designpattern.exceptions.CustomUncheckException;
 import com.java.designpattern.models.Person;
 import com.java.designpattern.repositories.PersonRepository;
+import com.java.designpattern.services.PersonManagement;
 
 @Service
 public class PersonManagementImpl implements PersonManagement{

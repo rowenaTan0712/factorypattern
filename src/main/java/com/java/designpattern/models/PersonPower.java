@@ -27,6 +27,13 @@ public class PersonPower {
 		this.personId = personId;
 		this.powerId = powerId;
 	}
+	
+	public PersonPower(Long personId, Long powerId) {
+		super();
+		this.personId = personId;
+		this.powerId = powerId;
+	}
+	
 	public Long getId() {
 		return id;
 	}
